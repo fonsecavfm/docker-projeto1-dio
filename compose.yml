@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  apache:
+    container_name: projeto
+    image: httpd:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
